@@ -1,0 +1,34 @@
+<!--This is a good intro program for HTML to teach the basics-->
+
+<html>
+  <head>
+    <!-- This sets the tab title-->
+    <meta charset = "utf-8">
+    <title>HTML & Javascript Basics</title>
+
+    <!--load external libraries here using script src-->
+    <script src="lib/cuon-matrix-cse160.js"></script>
+
+    <!--what is the main source? Link it to a js file!-->
+    <script src="Javascript.js"></script>
+  </head>
+
+  <!--call the main function from the javascript file-->
+  <body onload="main()">
+    <!-- This sets a paragraph-->
+    <p>Paragraph 1</p>
+
+    <!-- This makes a canvas-->
+    <canvas id="canvas1" width="400" height="400"></canvas>
+
+    <!--add a space between the canvas & input-->
+    <br></br>
+
+    <!--get the x coordinate-->
+    <input id="x=v1_x" type="number"></input>
+    <!--get the y coordinate-->
+    <input id="v1_y" type="number"></input>
+    <!--add in a button called "Draw" that calls the hndleDrawEvent function-->
+    <input type="button" value="Draw" onclick="handleDrawEvent()"></input>
+  </body>
+</html>
